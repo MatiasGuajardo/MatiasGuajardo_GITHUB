@@ -6,6 +6,7 @@
     padding: 0;
     /* Indica cómo se deben calcular las medidas de un elemento */
     box-sizing: border-box;
+    background: #f8ecfc;
 }
 
 /* Representa un grupo de ayudas introductorias o de navegación */
@@ -13,7 +14,7 @@ header {
     /* El header va a tener un ancho de 100% */
     width: 100%;
     /* El height va a tener un alto de 80px */
-    height: 80px;
+    height: 100px;
 }
 
 /* Es una caja dentro del header para moldear este mismo */
@@ -31,7 +32,7 @@ header {
     /* El .logo va a tener un ancho de 10%  */
     width: 10%;
     /* El .logo va a tener un alto de 70px */
-    height: 70px;
+    height: 80px;
     /* ubica un elemento al lado izquierdo o derecho de su contenedor,
      permitiendo a los elementos de texto y en línea aparecer a su costado. En este caso al izquierdo */
     float: left;
@@ -73,7 +74,7 @@ nav ul li a {
     /* De color negro las letras */
     color:black;
     /* Tamaño de la letra */
-    font-size: 20px;
+    font-size: 30px;
     /* Quita la decoracion de las lineas */
     text-decoration: none;
     /* Establece el espacio de relleno requerido por todos los lados de un elemento */
@@ -157,3 +158,143 @@ nav ul li a {
     /* Los bordes seran de 2px y de color negro */
     border: 2px solid black;
 }
+
+/* Hace un salto de las tablas en la pagina */
+.separacion {
+    /* El fondo de color blanco */
+    background-color: #ffffff;
+    /* Una altura de 40px */
+    height: 40px;
+    /* el espacio de relleno requerido por todos los lados de un elemento en este caso de 10px 10px 10px 10px*/
+    padding:10px 10px 10px 10px;
+    /* Convierte en negrita las letras */
+    font-weight: bold;
+}
+
+/* título principal */
+h1{
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 40px */
+    margin-top: 40px;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 38px;
+    /* Fuente de letra */
+    font-family: roboto, sans-serif;
+    /* Especifica la dimensión de la letra, de 30px */
+    font-size: 30px;
+    /* Especifica el peso o grueso de la letra, 600 */
+    font-weight: 600;
+    /* Establece la altura de una casilla remarcada por líneas, 20px */
+    line-height: 20px;
+    /* El texto establece el formato*/
+    text-decoration: none solid rgb(31, 34, 66);
+    /* Permite establecer un espaciado entre cada una de las palabras de un bloque de texto, 0px */
+    word-spacing: 0px;
+}
+
+/* */
+.tiendas {
+    /* Un ancho de 97% */
+    width: 97%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* establece los espacios de la imagenes, 27px */
+    gap: 27px;
+
+}
+
+/* Aca se modifica las imagenes */
+.tiendas img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* */
+.paronamas {
+    /* Un ancho de 98% */
+    width: 98%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* establece los espacios de la imagenes, 13px  */
+    gap: 13px;
+
+}
+
+/* Aca se modifica las imagenes */
+.paronamas img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* */
+.paronamas2 {
+    /* Un ancho de 98% */
+    width: 98%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* Divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* Establece los espacios de la imagenes, 13px  */
+    gap: 13px;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -50px */
+    margin-top: -50px;
+
+}
+
+/* Aca se modifica las imagenes */
+.paronamas2 img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* título principal */
+h2{
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px  */
+    margin-top: -10px;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 60px;
+    /*  Establece el espacio requerido en la parte inferior de un elemento, 60px */
+    margin-bottom: 60px;
+    /* Fuente de letra */
+    font-family: roboto, sans-serif;
+    /* Especifica la dimensión de la letra, de 30px */
+    font-size: 25px;
+    /* Especifica el peso o grueso de la letra, 600 */
+    font-weight: 600;
+    /* Establece la altura de una casilla remarcada por líneas, 20px */
+    line-height: 20px;
+    /* El texto establece el formato */
+    text-decoration: none solid rgb(31, 34, 66);
+    /* Permite establecer un espaciado entre cada una de las palabras de un bloque de texto, 0px */
+    word-spacing: 0px;
+}
+
+/* Aca se modifica las imagenes  */
+.paronamas3 img{
+    /* Un margen de 0% */
+    margin: 0%;
+    /* Un ancho de 81% */ 
+    width: 81%;
+}
+
