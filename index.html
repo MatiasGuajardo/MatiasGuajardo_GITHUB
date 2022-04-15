@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- -->
+    <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
-    
+<header>
+    <!-- Creamos la clase ancho -->
+    <div class="ancho">
+        <!-- Se crea la sub-clase logo -->
+        <div class="logo">
+            <!-- Este es el logo donde esta el href osea el link, img src como la imagen ademas Widht y Height del logo  -->
+            <p><a href="https://outletpark.cl/"><img src="img/logo.png" alt="" width="70" height="70"></a></p>
+        </div>
+        <!-- Proporciona los enlaces de navegacion -->
+        <nav>
+            <!-- Tenemos nuestras listas ordenadas -->
+            <ul>
+                <!-- declaramos cada uno de los elementos de una lista, hrfe para el reedirigir al index y img para la imagen -->
+                <li><a href=""></a><img src="img/bolsa.ico"></li>
+                <!-- declaramos cada uno de los elementos de una lista, hrfe para el reedirigir a las tiendas y img para la imagen -->
+                <li><a href="">Tiendas</a><img src="img/ojo.ico"></li>
+                <!-- declaramos cada uno de los elementos de una lista, hrfe para el reedirigir a los paronamas y img para la imagen  -->
+                <li><a href="">Paroramas</a><img src="img/ubicacion.ico"></li>
+                <!-- declaramos cada uno de los elementos de una lista, hrfe para el reedirigir a la ubicacion y img para la imagen  -->
+                <li><a href="">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Creamos un lista con una clase llamada slider -->
+<ul class="slider">
+
+    <!-- Se declara cada uno de los elementos de la lista -->
+
+    <li>
+        <!-- El type sirve para determina el tipo de entrada que se va a utilizar en este caso de tipo radio es representa 
+        una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo. La id para
+        cada uno es diferente, name para agrupar todos las listas juntas y en este caso checked para que cuando cargue la pagina
+        sea de los primeros-->
+        <input type="radio" id="sbutton1" name="sradio" checked>
+        <!-- Label se a relacionar con el id  -->
+        <label for="sbutton1"></label>
+        <!-- Se agrega la imagen -->
+        <img src="img/recuerdanuestro.jpg" alt=""></li>
+    <!-- Se declara cada uno de los elementos de la lista -->
+
+    <li>
+        <!-- El type sirve para determina el tipo de entrada que se va a utilizar en este caso de tipo radio es representa 
+        una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo. La id para
+        cada uno es diferente, name para agrupar todos las listas juntas y en este caso checked para que sea de los primeros -->
+        <input type="radio" id="sbutton2" name="sradio">
+        <!-- Label se a relacionar con el id  -->
+        <label for="sbutton2"></label>
+        <!-- Se agrega la imagen -->
+        <img src="img/cuidarte.png" alt=""></li>
+    <!-- Se declara cada uno de los elementos de la lista -->
+
+    <li>
+        <input type="radio" id="sbutton3" name="sradio">
+        <!-- Label se a relacionar con el id -->
+        <label for="sbutton3"></label>
+        <!-- Se agrega la imagen -->
+        <img src="img/tiendas.png" alt=""></li>
+    </li>
+</ul>
 </body>
+
 </html>
