@@ -1,0 +1,300 @@
+/* Para arreglar los margenes de la pagina */
+* {
+    /* Margen de 0 */
+    margin: 0;
+    /* El espacio entre el contenido del elemento y su borde en este caso de 0 */
+    padding: 0;
+    /* Indica cómo se deben calcular las medidas de un elemento */
+    box-sizing: border-box;
+    background: #f8ecfc;
+}
+
+/* Representa un grupo de ayudas introductorias o de navegación */
+header {
+    /* El header va a tener un ancho de 100% */
+    width: 100%;
+    /* El height va a tener un alto de 80px */
+    height: 100px;
+}
+
+/* Es una caja dentro del header para moldear este mismo */
+.ancho {
+    /* El .ancho va a tener un ancho de 100%  */
+    width: 80%;
+    /* El height va a tener un alto de 70px */
+    height: 70px;
+    /* El espacio entre el contenido del elemento y su borde en este caso es automatico */
+    margin: auto;
+}
+
+/* Caja del logo  */
+.logo {
+    /* El .logo va a tener un ancho de 10%  */
+    width: 10%;
+    /* El .logo va a tener un alto de 70px */
+    height: 80px;
+    /* ubica un elemento al lado izquierdo o derecho de su contenedor,
+     permitiendo a los elementos de texto y en línea aparecer a su costado. En este caso al izquierdo */
+    float: left;
+    /* establece el margen hacia la derecha de 100px */
+    margin-right: 100px;
+}
+
+/* Entramos a logo, parrafo y por ultimo a */
+.logo p a {
+    /* Alineamos las letras */
+    text-align: center;
+}
+
+/* Caja de los enlaces de navegacion */
+nav {
+    /* La barra va a tener un ancho de 70%  */
+    width: 70%;
+    /* El nav va a tener un alto de 0px */
+    height: 0px;
+    /* ubica un elemento al lado izquierdo o derecho de su contenedor,
+     permitiendo a los elementos de texto y en línea aparecer a su costado. En este caso al izquierdo */
+    float: left;
+    /* Alinea el texto hacia el centro */
+    text-align: center;
+    /* establece el espacio de relleno requerido en la parte superior del elemento, en este caso de 28px  */
+    padding-top: 28px;
+    /* La fuente de letra */
+    font-family: sans-serif;
+
+/* Entramos dentro de nav ul li */
+}
+nav ul li {
+    /*  especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, en este caso en la linea */
+    display: inline;
+}
+
+/* Dentro de nav ul li a se configura de la siguiente manera */
+nav ul li a {
+    /* De color negro las letras */
+    color:black;
+    /* Tamaño de la letra */
+    font-size: 30px;
+    /* Quita la decoracion de las lineas */
+    text-decoration: none;
+    /* Establece el espacio de relleno requerido por todos los lados de un elemento */
+    padding:12px 70px 20px 5px;
+    /* Convierte en negrita las letras */
+    font-weight: bold;
+}
+
+/* Este es el efecto que consiste en mostrar una serie de imágenes acompañadas de una serie de textos  */
+.slider {
+    /* El slider va a tener un ancho de 100%  */
+    width: 100%;
+    /* El slider va a tener un alto de 600px */
+    height: 600px;
+    /* Se va a centrar el slider */
+    margin: auto;
+    /* Se posicionan de acuerdo al slider */
+    position: relative;
+    /* Quita los estilos de lista */
+    list-style: none;
+    /* Establece el espacio de relleno requerido por todos los lados de un elemento */
+    padding: 0;
+    /* Para que los radio button esten en linea */
+    display: flex;
+
+    /* Se aliena el eje principal y secundario ya que por defecto esta el primero en horizontal y el segundo en vertical */
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+/* Las imagenes que estan en el slider */
+.slider img {
+    /* Posiciona el elemento de manera absoluta */
+    position: absolute;
+    /* Esto hace que empiecen desde el la posicion absoluta en este caso de arriba */
+    top: 0;
+    /* Especifica parte de la posición de un elemento en este caso a la izquierda*/
+    left: 0;
+    /* Las imagenes del slider van a tener un ancho de 100% */
+    width: 100%;
+    /* Las imagenes del slider van a tener un alto de 100%  */
+    height: 100%;
+    /* Todas las imagenes tiene opacidad 0, solo aparecen si uno da un click */
+    opacity: 0;
+    /* La transicion de las imagenes */
+    transition: all 0.7s;
+}
+
+/* Este es un input hacia los buttons  */
+.slider input[type="radio"] {
+    /* No se van a mostrar en pantalla, esto mas que nada para efecto visual */
+    display: none;
+}
+
+/* Esto es un selector de hermanos, que cuando este activado el input,
+ se va a seleccionar la etiqueta img, que sea hermano del .slider input  */
+.slider input[type="radio"]:checked ~ img {
+    /* Cuando este activado se va a aplicar la opacidad */
+    opacity: 1;
+
+/* Cambie el estilo de los buttons */
+}
+.slider input[type="radio"] + label {
+    /* Indica que la capa sí forma parte del flujo normal de elementos de la página */
+    position: relative;
+    /* Indica el orden de un elemento posicionado y sus descendientes */
+    z-index: 50;
+    /* Un margen de 10px */
+    margin: 10px;
+    /* usada para envolver los elementos */
+    display: block;
+    /* El ancho de 10px */
+    width: 10px;
+    /* La altura de 10px */
+    height: 10px;
+    /* El fondo es de color blanco */
+    background: white;
+    /* El radio del borde de un 50% */
+    border-radius: 50%;
+    /* Los bordes seran de 2px y de color negro */
+    border: 2px solid black;
+}
+
+/* Hace un salto de las tablas en la pagina */
+.separacion {
+    /* El fondo de color blanco */
+    background-color: #ffffff;
+    /* Una altura de 40px */
+    height: 40px;
+    /* el espacio de relleno requerido por todos los lados de un elemento en este caso de 10px 10px 10px 10px*/
+    padding:10px 10px 10px 10px;
+    /* Convierte en negrita las letras */
+    font-weight: bold;
+}
+
+/* título principal */
+h1{
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 40px */
+    margin-top: 40px;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 38px;
+    /* Fuente de letra */
+    font-family: roboto, sans-serif;
+    /* Especifica la dimensión de la letra, de 30px */
+    font-size: 30px;
+    /* Especifica el peso o grueso de la letra, 600 */
+    font-weight: 600;
+    /* Establece la altura de una casilla remarcada por líneas, 20px */
+    line-height: 20px;
+    /* El texto establece el formato*/
+    text-decoration: none solid rgb(31, 34, 66);
+    /* Permite establecer un espaciado entre cada una de las palabras de un bloque de texto, 0px */
+    word-spacing: 0px;
+}
+
+/* */
+.tiendas {
+    /* Un ancho de 97% */
+    width: 97%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* establece los espacios de la imagenes, 27px */
+    gap: 27px;
+
+}
+
+/* Aca se modifica las imagenes */
+.tiendas img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* */
+.paronamas {
+    /* Un ancho de 98% */
+    width: 98%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* establece los espacios de la imagenes, 13px  */
+    gap: 13px;
+
+}
+
+/* Aca se modifica las imagenes */
+.paronamas img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* */
+.paronamas2 {
+    /* Un ancho de 98% */
+    width: 98%;
+    /* Un margen de 50px,márgen en auto 50px */
+    margin: 50px auto 50px;
+    /* Divide la página en una cuadrícula o rejilla */
+    display: grid;
+    /* Aca se trabaja para acomodar en grillas las imagenes */
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    /* Establece los espacios de la imagenes, 13px  */
+    gap: 13px;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -50px */
+    margin-top: -50px;
+
+}
+
+/* Aca se modifica las imagenes */
+.paronamas2 img{
+    /* Un ancho de 100% */
+    width: 100%;
+    /* Al pasar por la imagen que el cursor se muestre como puntero */
+    cursor: pointer;
+    /* Una transicion en la animacion de un 1 segundo */
+    transition: 1s;
+}
+
+/* título principal */
+h2{
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px  */
+    margin-top: -10px;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 60px;
+    /*  Establece el espacio requerido en la parte inferior de un elemento, 60px */
+    margin-bottom: 60px;
+    /* Fuente de letra */
+    font-family: roboto, sans-serif;
+    /* Especifica la dimensión de la letra, de 30px */
+    font-size: 25px;
+    /* Especifica el peso o grueso de la letra, 600 */
+    font-weight: 600;
+    /* Establece la altura de una casilla remarcada por líneas, 20px */
+    line-height: 20px;
+    /* El texto establece el formato */
+    text-decoration: none solid rgb(31, 34, 66);
+    /* Permite establecer un espaciado entre cada una de las palabras de un bloque de texto, 0px */
+    word-spacing: 0px;
+}
+
+/* Aca se modifica las imagenes  */
+.paronamas3 img{
+    /* Un margen de 0% */
+    margin: 0%;
+    /* Un ancho de 81% */ 
+    width: 81%;
+}
+
