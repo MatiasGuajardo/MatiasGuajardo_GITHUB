@@ -6,7 +6,9 @@
     padding: 0;
     /* Indica cómo se deben calcular las medidas de un elemento */
     box-sizing: border-box;
-    background: #f8ecfc;
+    /* El fondo es de color rosa palido */
+    background-color: #f8ecfc;
+   
 }
 
 /* Representa un grupo de ayudas introductorias o de navegación */
@@ -15,6 +17,7 @@ header {
     width: 100%;
     /* El height va a tener un alto de 80px */
     height: 100px;
+
 }
 
 /* Es una caja dentro del header para moldear este mismo */
@@ -25,6 +28,7 @@ header {
     height: 70px;
     /* El espacio entre el contenido del elemento y su borde en este caso es automatico */
     margin: auto;
+
 }
 
 /* Caja del logo  */
@@ -38,12 +42,14 @@ header {
     float: left;
     /* establece el margen hacia la derecha de 100px */
     margin-right: 100px;
+
 }
 
 /* Entramos a logo, parrafo y por ultimo a */
 .logo p a {
     /* Alineamos las letras */
     text-align: center;
+
 }
 
 /* Caja de los enlaces de navegacion */
@@ -62,11 +68,13 @@ nav {
     /* La fuente de letra */
     font-family: sans-serif;
 
+
 /* Entramos dentro de nav ul li */
 }
 nav ul li {
     /*  especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, en este caso en la linea */
     display: inline;
+
 }
 
 /* Dentro de nav ul li a se configura de la siguiente manera */
@@ -81,14 +89,15 @@ nav ul li a {
     padding:12px 70px 20px 5px;
     /* Convierte en negrita las letras */
     font-weight: bold;
+
 }
 
 /* Este es el efecto que consiste en mostrar una serie de imágenes acompañadas de una serie de textos  */
 .slider {
     /* El slider va a tener un ancho de 100%  */
     width: 100%;
-    /* El slider va a tener un alto de 600px */
-    height: 600px;
+    /* El slider va a tener un alto de 745px */
+    height: 655px;
     /* Se va a centrar el slider */
     margin: auto;
     /* Se posicionan de acuerdo al slider */
@@ -203,8 +212,9 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
     /* establece los espacios de la imagenes, 27px */
     gap: 27px;
-
+    /* Hace un salto de las tablas en la pagina */
 }
+
 
 /* Aca se modifica las imagenes */
 .tiendas img{
@@ -271,7 +281,7 @@ h1{
 /* título principal */
 h2{
     /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px  */
-    margin-top: -10px;
+    margin-top: -50px;
     /* 	Establece la anchura del margen izquierdo de los elementos */
     margin-left: 60px;
     /*  Establece el espacio requerido en la parte inferior de un elemento, 60px */
@@ -296,5 +306,20 @@ h2{
     margin: 0%;
     /* Un ancho de 81% */ 
     width: 81%;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 140px */ 
+    margin-top: 140px;
 }
+
+/* Hace un salto de las tablas en la pagina */
+.separacionn {
+    /* El fondo de color blanco */
+    background-color: #ffffff;
+    /* Una altura de 40px */
+    height: 199px;
+    /* el espacio de relleno requerido por todos los lados de un elemento en este caso de 10px 10px 10px 10px*/
+    padding:10px 10px 10px 10px;
+    /* Convierte en negrita las letras */
+    font-weight: bold;
+}
+
 
