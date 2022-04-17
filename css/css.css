@@ -340,16 +340,67 @@ h2{
     font-weight: bold;
 }
 
+/* */
+.locomocion {
+    background: #3a328a;
+}
+
 /* Clase para limitar el footer*/
 .fondoMorado {
     /* Un ancho de 100% la imagen */
     width: 100%;
-    /* Un alto de 353px la imagen */
-    height: 353px;
+    /* Un alto de 300px la imagen */
+    height: 300px;
     /* El fondo de color morado */
     background: #3a328a;
     /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px */
     margin-top: -10px;
 }
 
+/* */
+.copy {
+    /* */
+    width: 100%;
+    /* */
+    height: 20px;
+    /* */
+    overflow: hidden;
+    /* */
+    position: relative;
+    /* */
+    background: #3a328a;
+}
+
+
+
+/* Espacio en la pagina donde va los derechos reservados */
+.copy p {
+    /* La fuente de letra */
+    font-family: Roboto, sans-serif;
+    /* Las letras se veran en negrita */
+    font-weight: bold;
+    /* Color blanco las letras */
+    color: white;
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* Hace que el texto quede en el centro */
+    position: absolute;
+    /* Con esto se centra el texto de manera de arriba */
+    top: 50%;
+    /* Y de esta parte por la izquierda */
+    left: 50%;
+    /* Se usan medidas relativas para poder centrar las letras */
+    transform:  translate(-50%, -50%);
+}
+
+
+/* Este da como espacio final el footer, para que tenga un tamaño igual al de la pagina real */
+.Espacio {
+    /* El .Espacio va a tener un ancho de 100% */
+    width: 100%;
+    /* El .Espacio va a tener un alto de 40px */
+    height: 40px;
+    /* Y va a tener un fondo de color morado */
+    background:#3a328a;
+}
 
