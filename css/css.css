@@ -17,6 +17,8 @@ header {
     width: 100%;
     /* El height va a tener un alto de 80px */
     height: 90px;
+     /* El fondo es de color blanco */
+    background: white;
 
 }
 
@@ -28,6 +30,8 @@ header {
     height: 70px;
     /* El espacio entre el contenido del elemento y su borde en este caso es automatico */
     margin: auto;
+     /* El fondo es de color blanco  */
+    background: white;
 
 }
 
@@ -48,13 +52,26 @@ header {
     margin-left: -70px;
     /* Establece la altuta del margen de arriba de los elementos */
     margin-top: 10px;
+     /* El fondo es de color blanco  */
+    background: white;
     
+}
+
+/* Entramos a logo, parrafo y por ultimo a */
+.logo p {
+    /* Alineamos las letras */
+    text-align: center;
+     /* El fondo es de color blanco  */
+    background: white;
+
 }
 
 /* Entramos a logo, parrafo y por ultimo a */
 .logo p a {
     /* Alineamos las letras */
     text-align: center;
+     /* El fondo es de color blanco  */
+    background: white;
 
 }
 
@@ -73,14 +90,23 @@ nav {
     padding-top: 28px;
     /* La fuente de letra */
     font-family: sans-serif;
+     /* El fondo es de color blanco  */
+    background: white;
+}
 
+ /* Se entra a las listas ordenadas */
+nav ul {
+     /* El fondo es de color blanco  */
+    background: white;
+}
 
 /* Entramos dentro de nav ul li */
-}
-nav ul li {
-    /*  especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, en este caso en la linea */
-    display: inline;
 
+nav ul li {
+    /* Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, en este caso en la linea */
+    display: inline;
+     /* El fondo es de color blanco  */
+    background: white;
 }
 
 /* Dentro de nav ul li a se configura de la siguiente manera */
@@ -103,6 +129,8 @@ nav ul li a {
     font-family: Effra, sans-serif;
     /* Pone a las letras en negrita */
     font-weight: bold;
+     /* El fondo es de color blanco  */
+    background: white;
 }
 
 /* Este es el efecto que consiste en mostrar una serie de imágenes acompañadas de una serie de textos  */
@@ -289,8 +317,6 @@ h1{
 .paronamas2 img{
     /* Un ancho de 100% */
     width: 100%;
-    /* Al pasar por la imagen que el cursor se muestre como puntero */
-    cursor: pointer;
     /* Una transicion en la animacion de un 1 segundo */
     transition: 1s;
 }
@@ -340,7 +366,7 @@ h2{
     font-weight: bold;
 }
 
-/* */
+/* Propiedades sobre la imagen locomocion */
 .locomocion {
     background: #3a328a;
 }
@@ -350,24 +376,160 @@ h2{
     /* Un ancho de 100% la imagen */
     width: 100%;
     /* Un alto de 300px la imagen */
-    height: 300px;
+    height: 330px;
     /* El fondo de color morado */
     background: #3a328a;
     /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px */
     margin-top: -10px;
 }
 
-/* */
+/* Clase para el mapa y su informacion */
+.seccionMapa {
+    /* Se le da un alto de 30px al direccion */
+    height: 30px;
+    /* Color al texto de color blanco */
+    color: white;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Se entra a las propiedades del titulo */
+.seccionMapa h2 {
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 240px;
+    /* Color al texto de color blanco */
+    color: white;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Se entra a las propiedades de los parrafos */
+.seccionMapa .MapaLugarSec p {
+    /* Fuente de letra */
+    font-family: Roboto, sans-serif;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 10px;
+    /* Color al texto de color blanco */
+    color: white;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Propiedades de la clase mapalugarsec */
+.MapaLugarSec {
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 100px;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 100px */
+    margin-top: 100px;
+    /* Altura de 0px */
+    height: 0px;
+}
+
+/* Propiedades de la seccion horario */
+.horarioSec {
+    /* Color al texto de color blanco */
+    color: white;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 10px */
+    margin-top: 10px;
+    /* Todo el texto se alinea al centro */
+    text-align: center;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Propiedades sobre la clase de los horarios informacion */
+.horario {
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* Fuente de letra */
+    font-family: Roboto, sans-serif;  
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -10px */
+    margin-top: -10px;
+}
+
+/* Lista de los horarios */
+.horario li {
+    /* Convierte en negrita las letras */
+    font-weight: bold;
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* Fuente de letra */
+    font-family: Roboto, sans-serif;
+}
+
+/* Propiedades de los parrafos de horarios */
+.horario p {
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* Fuente de letra */
+    font-family: Roboto, sans-serif;
+}
+
+/* Propiedades de contacto de la seccion */
+.contactoSEC {
+    /* Color al texto de color blanco */
+    color: white;
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de -255px */
+    margin-top: -255px;
+    /* 	Establece la anchura del margen izquierdo de los elementos */
+    margin-left: 1150px;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+ /* Propiedades del titulo contactos */
+.contactoSEC h2 {
+    /*Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Propiedades de contacto */
+.contacto {
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* Fuente de letra */
+    font-family: Roboto, sans-serif;  
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 10px */
+    margin-top: 10px;
+}
+
+/* Propiedades de los parrafos de contacto */
+.contacto p {
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 15px */
+    margin-top: 15px;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Propiedades de los parrafos de los contactos */
+.contacto p a {
+    /* Fondo de color morado */
+    background: #3a328a;
+    /* No se muestra la decoracion de las lineas */
+    text-decoration: none;
+    /* Color al texto de color blanco */
+    color: white;
+}
+
+/* Propiedades de las imagenes de facebook y instagram */
+.logosFI {
+    /* Establece el espacio de relleno requerido en la parte superior del elemento., de 20px */
+    margin-top: 20px;
+    /* Fondo de color morado */
+    background: #3a328a;
+}
+
+/* Propiedades de el texto de los derechos */
 .copy {
-    /* */
+    /* El ancho es de el 100% */
     width: 100%;
-    /* */
+    /* Una altura de 20px */
     height: 20px;
-    /* */
+    /* Se debe mostrar cuando el contenido se desborda de los extremos superior e inferior de un elemento en bloque */
     overflow: hidden;
-    /* */
+    /* Indica que la capa sí forma parte del flujo normal de elementos de la página  */
     position: relative;
-    /* */
+    /* Fondo de color morado */
     background: #3a328a;
 }
 
