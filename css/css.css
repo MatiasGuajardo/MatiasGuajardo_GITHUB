@@ -11,6 +11,13 @@
    
 }
 
+/* Clase que ayuda a mejorar cambio brusco a los hipervinculos */
+html {
+    /* Agrega efecto de suavisado al bajar */
+    scroll-behavior: smooth;
+}
+
+
 /* Representa un grupo de ayudas introductorias o de navegación */
 header {
     /* El header va a tener un ancho de 100% */
@@ -74,6 +81,7 @@ header {
     background: white;
 
 }
+
 
 /* Caja de los enlaces de navegacion */
 nav {
@@ -471,7 +479,7 @@ h2{
     color: white;
     /* Establece el espacio de relleno requerido en la parte superior del elemento., de -255px */
     margin-top: -255px;
-    /* 	Establece la anchura del margen izquierdo de los elementos */
+    /* 	Establece la anchura del margen izquierdo de los elementos del 1150px */
     margin-left: 1150px;
     /* Fondo de color morado */
     background: #3a328a;
@@ -543,6 +551,8 @@ h2{
     font-weight: bold;
     /* Color blanco las letras */
     color: white;
+    /* El tamaño de letra de 14px */
+    font-size: 14px;
     /* Fondo de color morado */
     background: #3a328a;
     /* Hace que el texto quede en el centro */
@@ -555,6 +565,21 @@ h2{
     transform:  translate(-50%, -50%);
 }
 
+/* Clase que establece un link a la pagina original del creador */
+.copy .linkW p {
+    /* Establece la anchura del margen izquierdo de los elementos del 250px */
+    margin-left: 250px;
+}
+
+/*  */
+.copy .linkW p a {
+    /* No se muestra la decoracion de las lineas */
+    text-decoration: none ;
+    /* Color blanco las letras */
+    color: white;
+    /* Fondo de color morado */
+    background:#3a328a;
+}
 
 /* Este da como espacio final el footer, para que tenga un tamaño igual al de la pagina real */
 .Espacio {
