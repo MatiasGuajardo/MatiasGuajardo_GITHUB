@@ -571,7 +571,7 @@ h2{
     margin-left: 250px;
 }
 
-/*  */
+/* Cambia las propiedades de las letras del link */
 .copy .linkW p a {
     /* No se muestra la decoracion de las lineas */
     text-decoration: none ;
